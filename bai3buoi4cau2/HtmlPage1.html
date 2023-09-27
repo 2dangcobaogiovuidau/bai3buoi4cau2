@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Button and Textbox</title>
+</head>
+<body>
+    <script>
+        document.write("Tạo Button và Textbox bằng Script</br>");
+        document.write("<br>");
+        document.write("<input type='button' id='welcome' value='Welcome' ");
+        document.write("onclick='showMessage()' > ");
+        document.write("<input type='text' id='msg' value='Welcome to'> ");
+
+        function showMessage() {
+            var msgTextbox = document.getElementById('msg');
+            msgTextbox.value = msgTextbox.value + " JavaScript";
+            alert('Welcome to JavaScript');
+        }
+    </script>
+</body>
+</html>
